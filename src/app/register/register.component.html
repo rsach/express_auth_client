@@ -1,0 +1,40 @@
+
+
+
+<mat-card>
+  <h5>Sign Up</h5>
+  <form [formGroup]="register" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" formControlName="email" type="email">
+      <mat-hint>{{formErrors.email}}</mat-hint>
+
+    </mat-form-field>
+
+    <mat-form-field class="password">
+      <input matInput placeholder="Password" formControlName="password" type="password" >
+      <mat-hint>{{formErrors.password}}</mat-hint>
+
+    </mat-form-field>
+
+
+
+    <mat-form-field class="password">
+      <input matInput placeholder="Confirm Password" formControlName="confirm_password" type="password" >
+      <mat-hint>{{formErrors.confirm_password}}</mat-hint>
+
+    </mat-form-field>
+
+    <button mat-raised-button  type="submit">Sign Up</button>
+
+
+    <div class="link-container">
+      <a routerLink="/login">Sign in</a>
+
+    </div>
+
+
+
+  </form>
+
+</mat-card>
+

@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 20vw;
+  //min-height: 20vh;
+  justify-content: center;
+
+}
+
+
+a {
+  font-family: "Apple Braille";
+  font-size: 2vh;
+  text-decoration: underline;
+  color: blue;
+  margin-top: 2vh;
+
+}
+
+.link-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.mat-hint {
+  color: red !important;
+}
+
+body {
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+  form {
+    min-width: 70vw;
+  }
+
+}
